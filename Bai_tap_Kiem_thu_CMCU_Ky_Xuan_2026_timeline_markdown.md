@@ -392,7 +392,7 @@ Trang web mẫu: https://www.saucedemo.com
 
 # III. Kiểm thử hiệu năng với JMeter
 
-Mục tiêu:
+## Mục tiêu
 
 Hiểu cách sử dụng JMeter để thực hiện kiểm thử hiệu năng.
 
@@ -400,7 +400,7 @@ Thiết kế kịch bản kiểm thử với các tham số khác nhau (có tín
 
 Phân tích kết quả kiểm thử và viết báo cáo.
 
-Yêu cầu:
+## Yêu cầu
 
 Mỗi sinh viên sẽ sử dụng JMeter để kiểm thử hiệu năng một trang web được gán dựa trên MSSV của mình.
 
@@ -408,9 +408,9 @@ Sinh viên cần tạo ít nhất 3 kịch bản kiểm thử (Thread Group) v�
 
 Kết quả kiểm thử phải được trình bày trong một báo cáo ngắn gọn (dạng file text hoặc markdown).
 
-Hướng dẫn thực hiện:
+## Hướng dẫn thực hiện
 
-Chọn trang web để kiểm thử:
+### Chọn trang web để kiểm thử
 
 Mỗi sinh viên sẽ chọn một trang web công khai từ danh sách sau dựa trên 2 chữ số cuối của MSSV:
 
@@ -445,7 +445,7 @@ Ví dụ: MSSV 12345678 → 2 chữ số cuối là 78 → kiểm thử trên ht
 
 .
 
-Thiết lập JMeter:
+### Thiết lập JMeter
 
 Tải và cài đặt JMeter (https://jmeter.apache.org/download_jmeter.cgi
 
@@ -455,9 +455,9 @@ Tải và cài đặt JMeter (https://jmeter.apache.org/download_jmeter.cgi
 
 Tạo một Test Plan mới trong JMeter.
 
-Tạo kịch bản kiểm thử:
+### Tạo kịch bản kiểm thử
 
-Thread Group 1 (Kịch bản cơ bản):
+#### Thread Group 1: Kịch bản cơ bản
 
 Số lượng người dùng (Threads): 10 + (MSSV % 10). Ví dụ, MSSV 12345678 → 78 % 10 = 8 → 18 người dùng.
 
@@ -465,7 +465,7 @@ Thời gian chạy (Loop Count): 5 lần lặp.
 
 Hành vi: Gửi yêu cầu HTTP GET đến trang chủ của website được gán.
 
-Thread Group 2 (Kịch bản tải nặng):
+#### Thread Group 2: Kịch bản tải nặng
 
 Số lượng người dùng: 50 + (MSSV % 20).
 
@@ -473,7 +473,7 @@ Ramp-up Period: 30 giây.
 
 Hành vi: Gửi yêu cầu HTTP GET đến trang chủ và 1 trang con bất kỳ (sinh viên tự chọn, ví dụ: trang tìm kiếm, bài viết, hoặc danh mục).
 
-Thread Group 3 (Kịch bản tùy chỉnh):
+#### Thread Group 3: Kịch bản tùy chỉnh
 
 Số lượng người dùng: 20 + (MSSV % 15).
 
@@ -485,27 +485,27 @@ Thêm HTTP Request Defaults để cấu hình URL cơ sở của website.
 
 Thêm Listeners (ví dụ: View Results Tree, Summary Report) để thu thập kết quả.
 
-Cá nhân hóa kịch bản:
+### Cá nhân hóa kịch bản
 
 Sinh viên phải thêm một User Defined Variables trong Test Plan, với một biến có tên là StudentID và giá trị là MSSV của mình.
 
 Sử dụng biến này trong ít nhất một yêu cầu HTTP (ví dụ: thêm tham số ?student_id=${StudentID} vào URL của một yêu cầu GET).
 
-Phân tích kết quả:
+### Phân tích kết quả
 
 Chạy từng Thread Group và thu thập các chỉ số: Response Time, Throughput, Error Rate.
 
 Lưu kết quả dưới dạng file CSV hoặc screenshot của Summary Report.
 
-Nộp bài qua GitHub:
+### Nộp bài qua GitHub
 
-Bước 1: Tạo tài khoản GitHub (nếu chưa có): Truy cập https://github.com
+#### Bước 1. Tạo tài khoản GitHub (nếu chưa có): Truy cập https://github.com
 
 (Links to an external site.)
 
 và đăng ký tài khoản.
 
-Bước 2: Tạo repository:
+#### Bước 2. Tạo repository
 
 Đăng nhập vào GitHub, nhấp vào nút "New" để tạo một repository mới.
 
@@ -513,7 +513,7 @@ Bước 2: Tạo repository:
 
 Chọn chế độ Public hoặc Private (nếu Private, mời giảng viên làm collaborator bằng email hoặc username của giảng viên).
 
-Bước 3: Cài đặt Git:
+#### Bước 3. Cài đặt Git
 
 Tải và cài đặt Git từ https://git-scm.com/downloads
 
@@ -526,7 +526,7 @@ Cấu hình Git với email và tên của bạn:
 git config --global user.email "your_email@example.com" git config --global user.name "Your Name"
 ```
 
-Bước 4: Tải bài nộp lên GitHub:
+#### Bước 4. Tải bài nộp lên GitHub
 
 Tạo một thư mục trên máy tính, ví dụ: JMeter_Assignment.
 
@@ -543,7 +543,7 @@ git init git add . git commit -m "Nộp bài tập JMeter" git branch -M main gi
 
 Thay [your-username] và [MSSV] bằng thông tin tương ứng.
 
-Bước 5: Gửi link repository:
+#### Bước 5. Gửi link repository
 
 Sao chép URL của repository trên GitHub (ví dụ: https://github.com/your-username/JMeter_Assignment_12345678
 
@@ -555,22 +555,22 @@ Nộp link repo vào bài tập này.
 
 Lưu ý: Đảm bảo repository chứa đầy đủ các file yêu cầu và file báo cáo theo định dạng dưới đây.
 
-Lưu ý chung:
+## Lưu ý chung
 
 Đảm bảo không gửi quá nhiều yêu cầu đến website để tránh vi phạm chính sách sử dụng (rate limiting). Nếu website có giới hạn, giảm số lượng người dùng hoặc liên hệ giảng viên để được gợi ý trang web thay thế.
 
 Mỗi sinh viên phải có kết quả khác nhau do sự khác biệt về MSSV và lựa chọn trang con.
 
-Lưu ý:
+### Lưu ý
 
 Đảm bảo không gửi quá nhiều yêu cầu đến website để tránh vi phạm chính sách sử dụng (rate limiting). Nếu website có giới hạn, giảm số lượng người dùng hoặc liên hệ giảng viên để được gợi ý trang web thay thế.
 
 Mỗi sinh viên phải có kết quả khác nhau do sự khác biệt về MSSV và lựa chọn trang con.
 
 
-Tệp báo cáo mẫu:
+## Tệp báo cáo mẫu
 
-Báo cáo kiểm thử JMeter:
+### Báo cáo kiểm thử JMeter
 
 ```
 # Báo cáo kiểm thử hiệu năng bằng JMeter
