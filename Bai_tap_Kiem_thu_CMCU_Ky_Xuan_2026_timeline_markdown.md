@@ -4,7 +4,7 @@
 
 Ghi chú:
 - Bài tập kỹ năng được giao và nộp hàng tuần.
-- Kiểm tra giữa kỳ diễn ra **tuần 6**; kiểm tra cuối kỳ là bài tập lớn theo nhóm + vấn đáp cuối học phần.
+- Kiểm tra giữa kỳ diễn ra **tuần 4 - tuần 6**; kiểm tra cuối kỳ là bài tập lớn theo nhóm + vấn đáp cuối học phần.
 
 | Tuần | Nội dung theo đề cương | Bài tập / Deliverables (tương ứng tài liệu bài tập) |
 |---|---|---|
