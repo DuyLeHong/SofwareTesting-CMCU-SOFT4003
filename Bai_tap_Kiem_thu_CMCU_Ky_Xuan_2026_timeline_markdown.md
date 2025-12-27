@@ -13,7 +13,7 @@ Ghi chú:
 | 3 | Chương 2 (tiếp): phương pháp & cấp độ kiểm thử | Bài II: Cypress (Saucedemo) — cài đặt Cypress, viết các kịch bản E2E cơ bản, chạy và lưu bằng chứng (video/ảnh). |
 | 4 | Chương 3: Kỹ thuật kiểm thử (hộp đen/hộp trắng/hộp xám) | Mở rộng Bài II: bổ sung test case theo kỹ thuật (biên, tương đương, đường đi). Viết checklist hoặc test case doc ngắn. |
 | 5 | Chương 4: Thiết kế test case, lập kế hoạch kiểm thử | Bài III: JMeter — thiết kế test plan, chạy thử nghiệm tải, xuất báo cáo kết quả. |
-| 6 | Ôn và kiểm tra giữa kỳ (tuần 6) | Nộp giữa kỳ theo yêu cầu lớp. Bắt đầu bài cộng điểm V: Quản lý lỗi với GitHub Issues/Jira (tạo issue template, tạo bug/task, triage). |
+| 6 | Ôn và kiểm tra giữa kỳ (tuần 4 - tuần 6) | Nộp giữa kỳ theo yêu cầu lớp. Bắt đầu bài cộng điểm V: Quản lý lỗi với GitHub Issues/Jira (tạo issue template, tạo bug/task, triage). |
 | 7 | Chương 5: Bài tập vận dụng (web/mobile/CSDL & bảo mật) | Tiếp tục bài V (đóng vòng đời bug: fix → re-test → close, báo cáo số liệu). Nếu chọn nâng cao: Bài IV Appium (không bắt buộc). |
 | 8 | Ôn tập, hoàn thiện bài tập lớn cuối kỳ | Tổng hợp báo cáo cuối kỳ: repo hoàn chỉnh, tài liệu, bằng chứng chạy test, báo cáo defect metrics (nếu làm bài V), chuẩn bị vấn đáp. |
 
