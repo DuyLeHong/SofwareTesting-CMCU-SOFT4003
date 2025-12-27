@@ -1,6 +1,6 @@
 # Bài tập môn Kiểm thử phần mềm - CMCU - Kỳ Xuân 2026
 
-## Timeline 8 tuần (gợi ý phân bổ theo đề cương)
+## Timeline 8 tuần (phân bổ theo đề cương)
 
 Ghi chú:
 - Bài tập kỹ năng được giao và nộp hàng tuần.
